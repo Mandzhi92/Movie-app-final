@@ -1,0 +1,15 @@
+.description{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter';
+    font-style: 'Regular';
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+.description-box{
+    margin-right: 20px;
+}

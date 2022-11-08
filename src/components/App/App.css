@@ -1,0 +1,17 @@
+
+
+.movieApp{
+  background-color: #E5E5E5;
+}
+
+.container{
+  height: 100%;
+  width: 1010px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  padding: 35px;
+  background-color: #fff;
+}
