@@ -19,7 +19,6 @@ function Cards(props) {
       </div>
     );
   });
-
   return <div className="container">{listItems}</div>;
 }
 

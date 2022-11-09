@@ -2,7 +2,7 @@ import React from 'react';
 import './DescriptionMovie.css';
 
 function DescriptionMovie({ overview }) {
-  function onClampString(inputString, maxLength = 35) {
+  function onClampString(inputString, maxLength = 30) {
     return inputString.split(' ').slice(0, maxLength).join(' ') + '...';
   }
 

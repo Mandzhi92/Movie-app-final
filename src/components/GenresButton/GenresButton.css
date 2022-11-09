@@ -1,7 +1,7 @@
 .btn-box{
     height: 20px;
     width: 110px;
-   
+    margin-bottom: 7px;
     display: flex;
     justify-content: space-between;
 }
@@ -10,4 +10,7 @@
     font-family: 'Inter';
     font-size: 12px;
     height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
