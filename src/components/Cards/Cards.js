@@ -6,8 +6,9 @@ import Poster from '../Poster';
 import GenresButton from '../GenresButton';
 import DescriptionMovie from '../DescriptionMovie';
 
-function Cards(props) {
-  const listItems = props.movieData.map(({ title, poster_path, id, overview, release_date }) => {
+function Cards({ movieData }) {
+  // console.log(movieData)
+  const listItems = movieData.map(({ title, poster_path, id, overview, release_date }) => {
     return (
       <div className="card" key={id}>
         <Poster posterPath={poster_path} />

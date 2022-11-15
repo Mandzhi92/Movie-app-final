@@ -2,16 +2,40 @@
 
 .movieApp{
   background-color: #E5E5E5;
+  height: 100%;
 }
 
 .container{
-  height: 100%;
-  width: 1010px;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
+  
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr 1fr;
   padding: 35px;
   background-color: #fff;
+}
+
+.wrapper{
+  height: 100%;
+  width: 1010px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.loading {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  z-index: 100;
+}
+
+.ant-alert-warning{
+  margin: 0 auto;
+}
+
+.ant-alert-error{
+  margin: 0 auto;
 }
