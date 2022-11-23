@@ -5,5 +5,15 @@ body {
 }
 
 #root {
-height: 380vh;
+height: 450vh;
+}
+
+@media screen and (min-width: 420px) and (max-width: 479px) {
+  body {
+    width: 1010px;
+  }
+
+  #root {
+    height: 450vh;
+    }
 }

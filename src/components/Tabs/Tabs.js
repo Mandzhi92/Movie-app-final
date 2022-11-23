@@ -1,27 +1,24 @@
 import React from 'react';
 import { Tabs } from 'antd';
 
-function Tab() {
+function Tab({ switchTabs }) {
   return (
-    <>
-      <Tabs
-        defaultActiveKey="1"
-        className="tabs"
-        centered
-        items={[
-          {
-            label: 'Search',
-            key: '1',
-            children: '',
-          },
-          {
-            label: 'Rated',
-            key: '2',
-            children: '',
-          },
-        ]}
-      />
-    </>
+    <Tabs
+      defaultActiveKey="1"
+      className="tabs"
+      centered
+      onChange={switchTabs}
+      items={[
+        {
+          label: 'Search',
+          key: '1',
+        },
+        {
+          label: 'Rated',
+          key: '2',
+        },
+      ]}
+    />
   );
 }
 

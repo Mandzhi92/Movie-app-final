@@ -1,5 +1,3 @@
-
-
 .movieApp{
   background-color: #E5E5E5;
   height: 100%;
@@ -8,7 +6,7 @@
 .container{
   width: 100%;
   height: auto;
-  
+  list-style-type: none;
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr 1fr;
@@ -21,7 +19,6 @@
   width: 1010px;
   margin: 0 auto;
   background-color: #fff;
-  padding-top: 30px;
   padding-bottom: 40px;
 }
 
@@ -32,10 +29,106 @@
   z-index: 100;
 }
 
-.ant-alert-warning{
+.error{
   margin: 0 auto;
+  width: 275px;
 }
 
-.ant-alert-error{
-  margin: 0 auto;
+@media screen and (min-width: 400px) and (max-width: 479px) {
+  body{
+    width: 100%;
+  }
+  .container{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+  }
+  .movieApp{
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0rem;
+    flex-wrap: wrap;
+  }
+  .movies {
+    min-height: auto;
+  }
+  .card {
+    width: 100%;
+    height: 245px;
+  }
+  .poster-box {
+    width: 65px;
+    height: 91px;
+    margin: 6px 13px 10px 10px;
+  }
+  .info-movie{
+    width: 80%;
+    margin-left: 0px;
+    height: auto;
+  }
+  .description-box{
+    width: 120%;
+    height: 21.9%;
+    padding: 0px 10px 10px 0px;
+    margin-left: -72px;
+    margin-top: 5px;
+  }
+  .rating {
+    left: 86%;
+    top: 5px;
+  }
+  .date{
+    margin-bottom: -4x;
+  }
+  .genre {
+    margin-right: 8px;
+  }
+  .ant-rate {
+    position: absolute;
+    top: 205px;
+    margin-bottom: 0px;
+  }
+  .error {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  body{
+    width: 100%;
+  }
+
+  .container{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .poster-box {
+    width: 220px;
+    min-height: 37%;
+  }
+  .rating {
+    left: 86%;
+    top: 5px;
+  }
+  .info-movie{
+    width: 76%;
+  }
+  .ant-rate {
+    position: absolute;
+    top: 235px;
+    left: -12px;
+  }
 }
